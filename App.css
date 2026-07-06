@@ -1,0 +1,157 @@
+/* frontend/src/App.css */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #20a8ec;
+  color: #333;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.new-habit-card {
+  background: #1f1e1e;
+  border: 1px solid #2b81b9;
+  border-radius: 10px;
+  padding: 18px;
+  margin-bottom: 24px;
+}
+
+.input-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.input-row input {
+  flex: 1;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid #6061ad;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.input-row button {
+  height: 42px;
+  padding: 0 16px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.input-row button:hover {
+  background-color: #1d4ed8;
+}
+
+.habit-card {
+  background: #252525;
+  border: 1px solid #3883b6;
+  border-radius: 10px;
+  padding: 18px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.habit-card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+}
+
+.streak-text {
+  font-size: 1rem;
+  color: #666;
+  margin: 6px 0 14px 0;
+}
+
+.streak-text.active {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ea580c;
+}
+
+.checkin-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.checkin-btn:hover:not(.disabled) {
+  background-color: #1d4ed8;
+}
+
+.checkin-btn.disabled {
+  background-color: #d1fae5;
+  color: #065f46;
+  cursor: not-allowed;
+}
+
+.history-timeline {
+  display: flex;
+  gap: 6px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.history-box {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.history-box.done {
+  background-color: #10b981;
+  color: white;
+}
+
+.history-box.not-done {
+  background-color: #e5e7eb;
+  color: #9ca3af;
+}
+
+.delete-btn {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  background: none;
+  border: none;
+  color: #9ca3af;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: #dc2626;
+}
+
+.status-text {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 40px;
+}
